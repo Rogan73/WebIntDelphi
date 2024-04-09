@@ -2,4 +2,6 @@
 
 ### Передача и прием данных из программы Delphi 
 
-![alt text](.screen.jpg)
+
+## Screenshots
+![App Screenshot](screen.jpg)
