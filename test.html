@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="dark">
+<head>
+<title>WebViewer Example</title>
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="mx-2 my-2 dark:bg-gray-700  dark:placeholder-gray-400 dark:text-white">
+
+
+<div class="grid grid-rows-3 grid-flow-col gap-4">
+  <div class="row-span-3">
+     <h3 class="text-3xl font-bold underline text-clifford">v.2.2</h3>
+  </div>
+  <div class="col-span-2">
+      
+        <div >
+        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Получение данных</label>
+        <input class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" id="name">
+        </div>      
+      
+  </div>
+  <div class="row-span-2 col-span-2">
+      
+        <div>
+        <label for="name" 
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" 
+        >Отправка данных</label>
+        <input type="text" id="sendtext" value="Пример текста"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        >
+
+        <button  onclick="sendCommand()"
+        class="mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >Передать в Delphi</button>
+        </div>      
+      
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+    
+
+function sendCommand() {
+    console.log('console log ==');
+    
+    window.chrome.webview.postMessage(document.getElementById('sendtext').value);
+}
+</script>
+</body>
+</html>
