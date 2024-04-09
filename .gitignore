@@ -1,0 +1,15 @@
+
+# for Delphi progects
+
+/__history
+/__recovery
+
+*.exe
+
+
+*.dproj.local
+*.identcache
+
+
+# Log files
+*.log*
