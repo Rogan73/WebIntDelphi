@@ -1,5 +1,11 @@
+.DS_Store
+node_modules
+/dist
+.idea
+.vscode
 
-# for Delphi progects
+
+.gitignore
 
 /__history
 /__recovery
