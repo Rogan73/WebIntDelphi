@@ -34,9 +34,6 @@ object Form6: TForm6
     ParentCtl3D = False
     ParentFont = False
     TabOrder = 0
-    ExplicitLeft = 16
-    ExplicitTop = 232
-    ExplicitHeight = 350
     object CategoryPanel1: TCategoryPanel
       Top = 0
       Caption = #1055#1077#1088#1077#1076#1072#1095#1072' '#1076#1072#1085#1085#1099#1093
@@ -55,8 +52,6 @@ object Form6: TForm6
       Top = 200
       Caption = #1055#1086#1083#1091#1095#1077#1085#1080#1077' '#1076#1072#1085#1085#1099#1093
       TabOrder = 1
-      ExplicitLeft = -4
-      ExplicitTop = 206
       object LabeledEdit2: TLabeledEdit
         Left = 15
         Top = 88
@@ -79,10 +74,6 @@ object Form6: TForm6
     BevelOuter = bvNone
     Caption = 'Panel1'
     TabOrder = 1
-    ExplicitLeft = 632
-    ExplicitTop = 56
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object WebBrowser1: TEdgeBrowser
       Left = 0
       Top = 49
@@ -94,8 +85,6 @@ object Form6: TForm6
       TargetCompatibleBrowserVersion = '117.0.2045.28'
       UserDataFolder = '%LOCALAPPDATA%\bds.exe.WebView2'
       OnWebMessageReceived = WebBrowser1WebMessageReceived
-      ExplicitLeft = 4
-      ExplicitTop = 46
     end
     object Panel2: TPanel
       Left = 0
@@ -105,7 +94,6 @@ object Form6: TForm6
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitWidth = 831
       object LabeledEdit1: TLabeledEdit
         Left = 6
         Top = 15
